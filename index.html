@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mama Lola | Demo Site</title>
+    <meta
+      name="description"
+      content="A simple demo website for Mama Lola built around the source video."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23b6342b'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='Georgia,serif' font-size='18' font-weight='700' fill='white'%3EML%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Mama Lola home">
+        <span class="brand-mark">ML</span>
+        <span>Mama Lola</span>
+      </a>
+      <nav>
+        <a href="#reel">Reel</a>
+        <a href="#menu">Menu</a>
+        <a href="#visit">Visit</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <video
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="assets/poster.jpg"
+          aria-label="Mama Lola kitchen video"
+        >
+          <source src="assets/mamalola.webm" type="video/webm" />
+          <source src="assets/mamalola.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Wood-fired kitchen</p>
+          <h1 id="hero-title">Mama Lola</h1>
+          <p class="hero-copy">
+            Handmade dough, roaring ovens, and a table that feels like it has
+            been waiting for you all night.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#reel">Watch the reel</a>
+            <a class="button button-secondary" href="#visit">Reserve a table</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-band" aria-label="Restaurant highlights">
+        <div>
+          <span class="stat">18 sec</span>
+          <span class="label">brand reel</span>
+        </div>
+        <div>
+          <span class="stat">500°F</span>
+          <span class="label">oven heat</span>
+        </div>
+        <div>
+          <span class="stat">Daily</span>
+          <span class="label">fresh dough</span>
+        </div>
+      </section>
+
+      <section class="reel-section" id="reel" aria-labelledby="reel-title">
+        <div class="section-copy">
+          <p class="eyebrow">The house reel</p>
+          <h2 id="reel-title">A quick taste of the Mama Lola energy.</h2>
+          <p>
+            Use this clip as the centerpiece for demos, social previews, event
+            pages, or a lightweight campaign landing page.
+          </p>
+        </div>
+        <div class="video-frame">
+          <video controls playsinline poster="assets/poster.jpg">
+            <source src="assets/mamalola.webm" type="video/webm" />
+            <source src="assets/mamalola.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+
+      <section class="menu-section" id="menu" aria-labelledby="menu-title">
+        <div class="section-copy">
+          <p class="eyebrow">From the oven</p>
+          <h2 id="menu-title">Simple favorites for a demo menu.</h2>
+        </div>
+        <div class="menu-grid">
+          <article>
+            <h3>Margherita Classica</h3>
+            <p>San Marzano tomato, fresh mozzarella, basil, olive oil.</p>
+          </article>
+          <article>
+            <h3>Roasted Garlic Bianca</h3>
+            <p>Ricotta, garlic cream, herbs, crisp parmesan edges.</p>
+          </article>
+          <article>
+            <h3>Sunday Red</h3>
+            <p>Slow tomato sauce, oregano, chili flake, torn mozzarella.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="visit-section" id="visit" aria-labelledby="visit-title">
+        <div>
+          <p class="eyebrow">Open tonight</p>
+          <h2 id="visit-title">Bring the whole table.</h2>
+        </div>
+        <a class="button button-primary" href="mailto:hello@mamalola.example">
+          Reserve a table
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <span>Mama Lola Demo Site</span>
+      <span>Built from the supplied video source.</span>
+    </footer>
+  </body>
+</html>
